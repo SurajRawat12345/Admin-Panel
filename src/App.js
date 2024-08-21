@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useEffect} from 'react';
+import LandingPage from './pages/LandingPage';
+import { Routes , Route } from 'react-router-dom';
+import alldata from './components/SampleData.json';
 
 function App() {
+  const firstFunc = async() => {
+    localStorage.setItem('data', JSON.stringify(alldata));
+  }
+  useEffect(() => {
+    firstFunc();
+    // eslint-disable-next-line
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<LandingPage/>} />
+      </Routes>
     </div>
   );
 }

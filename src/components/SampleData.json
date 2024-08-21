@@ -1,0 +1,76 @@
+{ 
+    "data" : [
+        {
+            "name" : "CSPM Executive Dashboard",
+            "shorthand" : "CSPM",
+            "widgets" : [
+                {
+                    "name" : "Cloud Accounts",
+                    "display" : true,
+                    "image" : "./Images/first_widget.png",
+                    "data" : ""
+                },
+                {
+                    "name" : "Cloud Account Risk Assignment",
+                    "display" : true,
+                    "image" :"./Images/second_widget.png",
+                    "data" : ""
+                }
+            ] 
+        },
+        {
+            "name" : "CWPP Dashboard",
+            "shorthand" : "CWPP",
+            "widgets" : [
+                {
+                    "name" : "Top 5 Namespace Specific Alerts",
+                    "display" : true,
+                    "image" : "",
+                    "data" : ""
+                },
+                {
+                    "name" : "Workload Alerts",
+                    "display" : true,
+                    "image" :"",
+                    "data" : ""
+                }
+            ]
+        },
+        {
+            "name" : "Registry Scan",
+            "shorthand" : "Images",
+            "widgets" : [
+                {
+                    "name" : "Image Risk Assessment",
+                    "display" : true,
+                    "image" : "./Images/third_widget.png",
+                    "data" : ""
+                },
+                {
+                    "name" : "Image Security Issue",
+                    "display" : true,
+                    "image" :"./Images/fourth_widget.png",
+                    "data" : ""
+                }
+            ]
+        },
+        {
+            "name" : "Ticket Dashboard",
+            "shorthand" : "Ticket",
+            "widgets" : [
+                {
+                    "name" : "Software ticket",
+                    "display" : true,
+                    "image" : "",
+                    "data" : ""
+                },
+                {
+                    "name" : "Website ticket",
+                    "display" : true,
+                    "image" :"",
+                    "data" : ""
+                }
+            ]
+        }
+    ]
+}
